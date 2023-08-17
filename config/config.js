@@ -10,7 +10,7 @@ module.exports = {
       username: 'doadmin',
       password: 'AVNS_WqNzDFsGW_6FJIb3NBf',
       database: 'defaultdb',
-      host: 'private-db-postgresql-sgp1-19609-do-user-14535698-0.b.db.ondigitalocean.com',
+      host: 'db-postgresql-sgp1-19609-do-user-14535698-0.b.db.ondigitalocean.com',
       dialect: 'postgres',
       port: 25060
     }
