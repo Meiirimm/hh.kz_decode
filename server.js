@@ -9,6 +9,9 @@ const app = express();
 app.use(logger('dev'))
 const corsOptions = {
     origin: 'http://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    headers: 'Content-Type,Authorization',
+  
 };
   
 app.use(cors(corsOptions));
