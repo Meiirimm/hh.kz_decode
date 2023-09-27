@@ -8,10 +8,11 @@ const app = express();
 
 app.use(logger('dev'))
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://example.com'],
-  };
+    origin: 'http://localhost:3000',
+};
   
 app.use(cors(corsOptions));
+  
 app.use(express.urlencoded())
 app.use(express.json())
 app.use(passport.initialize());
