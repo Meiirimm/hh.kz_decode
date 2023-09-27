@@ -7,14 +7,7 @@ const cors = require("cors")
 const app = express();
 
 app.use(logger('dev'))
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    headers: 'Content-Type,Authorization',
-  
-};
-  
-app.use(cors(corsOptions));
+app.use(cors());
   
 app.use(express.urlencoded())
 app.use(express.json())
